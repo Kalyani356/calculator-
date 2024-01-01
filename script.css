@@ -1,0 +1,67 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 200px;
+  gap: 10px;
+}
+
+#display {
+  grid-column: span 4;
+  height: 50px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  font-size: 24px;
+}
+
+button {
+  height: 50px;
+  font-size: 24px;
+  border: 1px solid #fff4f4;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+button:hover {
+  background-color: #3498db; /* Change to the color you prefer when hovering */
+}
+
+button:active {
+  background-color: #ddd;
+}
+
+.numButton,
+.opButton,
+.eqButton,
+.clearButton,
+.eraseButton {
+  width: 100px;
+}
+
+/* Add styling for specific button classes */
+.opButton,
+.eqButton,
+.clearButton,
+.eraseButton {
+  background-color: #030303;
+  color: #fff;
+  font-weight: bold;
+}
+
+.opButton:active,
+.eqButton:active,
+.clearButton:active,
+.eraseButton:active {
+  background-color: #030303;
+}
